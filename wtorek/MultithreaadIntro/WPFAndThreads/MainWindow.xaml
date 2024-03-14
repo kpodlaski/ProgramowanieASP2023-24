@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPFAndThreads.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAndThreads"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="476" Width="800">
+    <Grid>
+        <Canvas Margin="10,10,10,67">
+            <Ellipse Name="Ball" Width="30" Height="30" Fill="Blue" Canvas.Left="110" Canvas.Top="73"/>
+        </Canvas>
+        <Button Margin="639,394,19,10" Content="Start" Click="Button_Click"></Button>
+    </Grid>
+</Window>
