@@ -48,9 +48,7 @@ namespace Race
 
         private void start()
         {
-            lock (random) {
-                vel = random.NextDouble() * 3 + .5;
-            }
+           
             double d = 0.0;
             while (d < race.Distance)
             {
@@ -63,6 +61,10 @@ namespace Race
         {
             //Do some prepare operations
             Console.WriteLine("Zawodnik "+Name+ " pojawił się na lini startu");
+            lock (random)
+            {
+                vel = random.NextDouble() * 3 + .5;
+            }
         }
     }
 }

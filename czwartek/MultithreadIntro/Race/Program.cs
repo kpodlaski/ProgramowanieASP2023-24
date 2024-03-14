@@ -6,14 +6,14 @@ namespace Race
     class Program
     {
        
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             SpeedwayRace race = new SpeedwayRace(4, 30000);
             race.StartRace(new string[] { "Adam", "Marian", "Zenon", "Kamil" });
         }
 
 
-        static void Main2(string[] a)
+        static void Main(string[] a)
         {
             Barrier b = new Barrier(2, (b) => { 
                 Thread.Sleep(2000); 

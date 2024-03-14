@@ -27,6 +27,10 @@ namespace Race
         private void initRace(Barrier obj)
         {
             startTime = DateTime.Now.Ticks;
+            for(int i=4; i>0; i--)
+            {
+                Console.WriteLine("[" + i + "]");
+            }
             Console.WriteLine("Start!!!");
         }
 
